@@ -1,0 +1,23 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Show the list of movies</h1>
+       <% for(var i=0; i <allthemovies.length;i++){%>
+        <%=allthemovies[i].name%> &nbsp;
+        <%=allthemovies[i].director%> &nbsp;
+        <%=allthemovies[i].year_released%> &nbsp; <br/>
+       <%}%>
+
+       <h2> List movieby name</h2>
+       <form action="/movies/findbyname" method="get">
+        <input type="text" name="name" placeholder="search"/>
+        <input type="submit" value="search"/>
+
+       </form>
+</body>
+</html></html>
